@@ -33,20 +33,13 @@ public static void main(String[] args) throws InterruptedException {
 		List<WebElement> pagelist=select.getOptions();
 		System.out.println(pagelist.size());
 		
-		/*for(int i=1;i<pagelist.size();i++)
+		for(int i=1;i<pagelist.size();i++)
 		{
 			try {
 			select.selectByIndex(i);
 			}catch(Exception e) {}
-		}*/
+		}
 		
-		List<WebElement> page=driver.findElements(By.xpath("(//div[@class='pagination'])[1]/option"));
-		int j=0;
-		/*while(true) {
-			if(driver.findElements(By.linkText("Kamal sharma")).Size()==1) {
-				selectcontact
-			}
-				
-		}*/
+	
 }
 }
